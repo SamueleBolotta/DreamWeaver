@@ -1,62 +1,119 @@
-# DreamWeaver
+# DreamWeaver - Interpretatore di sogni
 
-A Next.js project for [brief description of what your project does].
+DreamWeaver è un'applicazione web basata su Next.js che utilizza modelli avanzati di AI per offrire interpretazioni di sogni personalizzate. Questo servizio permette agli utenti di inserire descrizioni dettagliate dei loro sogni e ricevere analisi approfondite sul possibile significato e sui simbolismi presenti.
 
-## Getting Started
+## 🌟 Caratteristiche
 
-Follow these instructions to get the project running on your local machine.
+- **Interfaccia intuitiva**: Facile da usare per descrivere i tuoi sogni in dettaglio
+- **Interpretazione avanzata**: Utilizza modelli di linguaggio avanzati per analizzare e interpretare i sogni
+- **Analisi simbolica**: Identifica simboli comuni e il loro significato contestuale
+- **Responsive design**: Funziona perfettamente su desktop, tablet e dispositivi mobili
 
-### Prerequisites
+## 🚀 Come iniziare
 
-- [Node.js](https://nodejs.org/) (v14 or newer recommended)
-- npm (comes with Node.js) or [Yarn](https://yarnpkg.com/)
-- Git
+### Prerequisiti
 
-### Installation
+Prima di iniziare, assicurati di avere installato:
 
-1. Clone the repository
+- [Node.js](https://nodejs.org/) (versione 14.x o superiore)
+- [npm](https://www.npmjs.com/) (normalmente incluso con Node.js)
+- [Git](https://git-scm.com/) per clonare il repository
+
+### Installazione e setup
+
+1. **Clona il repository**
+
    ```bash
    git clone git@github.com:SamueleBolotta/DreamWeaver.git
    cd DreamWeaver
    ```
 
-2. Install dependencies
+2. **Installa le dipendenze**
+
    ```bash
    npm install
-   # or if you use Yarn
-   yarn
    ```
 
-   Note: This will create a `node_modules` directory with all the required dependencies. This directory is intentionally not included in the repository to keep it lightweight.
+   > **Nota Importante:** La directory `node_modules` non è inclusa nel repository e verrà creata automaticamente quando esegui `npm install`.
+   
+3. **Configura le variabili d'ambiente**
 
-3. Run the development server
+   Crea un file `.env.local` nella directory principale del progetto con il seguente contenuto:
+
+   ```plaintext
+   # Chiave API per OpenAI o altra API di AI che stai utilizzando
+   API_KEY=your_api_key_here
+   ```
+
+   Sostituisci `your_api_key_here` con la tua chiave API effettiva.
+
+4. **Avvia l'ambiente di sviluppo**
+
    ```bash
    npm run dev
-   # or with Yarn
-   yarn dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application
+   L'applicazione sarà disponibile all'indirizzo [http://localhost:3000](http://localhost:3000).
 
-## Project Structure
+## 🛠️ Struttura del progetto
 
-- `/pages` - Next.js pages/routes
-- `/styles` - CSS/styling files
+```
+DreamWeaver/
+│
+├── node_modules/       # Dipendenze del progetto (generate da npm install)
+├── pages/              # Pagine dell'applicazione
+│   ├── api/            # Endpoint API
+│   └── index.js        # Pagina principale
+│
+├── public/             # File statici accessibili pubblicamente
+├── styles/             # File CSS e stili
+│
+├── .gitignore          # File e cartelle ignorate da Git
+├── package.json        # Dipendenze e script
+├── next.config.js      # Configurazione di Next.js
+└── README.md           # Questo file
+```
 
-## Available Scripts
+## 📝 Come Usare l'applicazione
 
-- `npm run dev` - Runs the development server
-- `npm run build` - Builds the app for production
-- `npm start` - Runs the built app in production mode
+1. Apri l'applicazione nel browser all'indirizzo [http://localhost:3000](http://localhost:3000)
+2. Inserisci la descrizione del tuo sogno nell'area di testo
+3. Clicca sul pulsante "Interpreta Sogno"
+4. Attendi che l'AI analizzi il tuo sogno
+5. Visualizza l'interpretazione dettagliata fornita dall'applicazione
 
-## Contributing
+## 🧠 Come funziona
 
-Instructions for how to contribute to the project, if applicable.
+DreamWeaver utilizza un approccio basato su:
 
-## License
+1. **Analisi del testo**: Il sistema analizza la descrizione del sogno per identificare elementi chiave, emozioni e contesto
+2. **Identificazione dei simboli**: L'AI identifica simboli comuni e il loro possibile significato nel contesto del sogno
+3. **Interpretazione contestuale**: Fornisce un'interpretazione che considera il contesto personale e culturale, quando disponibile
+4. **Generazione di risposta**: Crea una risposta comprensibile e dettagliata che offre spunti di riflessione all'utente
 
-This project is licensed under the [License Name] - see the LICENSE file for details.
+## 🤝 Contribuire al progetto
 
-## Acknowledgments
+Siamo felici di ricevere contributi! Ecco come puoi aiutare:
 
-Any credits or acknowledgments you'd like to include.
+1. Fai un fork del repository
+2. Crea un branch per la tua feature (`git checkout -b feature/amazing-feature`)
+3. Committa le tue modifiche (`git commit -m 'Aggiunta di una funzionalità'`)
+4. Pusha al branch (`git push origin feature/amazing-feature`)
+5. Apri una Pull Request
+
+## 📚 Risorse utili
+
+- [Documentazione di Next.js](https://nextjs.org/docs)
+- [Documentazione di React](https://reactjs.org/docs/getting-started.html)
+- [Guida all'API di OpenAI](https://platform.openai.com/docs/api-reference) (se utilizzata)
+
+## 📄 Licenza
+
+Questo progetto è distribuito con licenza MIT. Consulta il file `LICENSE` per maggiori informazioni.
+
+## 📞 Contatti
+
+Samuele Bolotta - [bolottasamuele@gmail.com](mailto:bolottasamuele@gmail.com)
+
+Link al Progetto: [https://github.com/SamueleBolotta/DreamWeaver](https://github.com/SamueleBolotta/DreamWeaver)
+
