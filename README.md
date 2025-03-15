@@ -74,7 +74,7 @@ DreamWeaver/
 └── README.md           # Questo file
 ```
 
-## 📝 Come Usare l'applicazione
+## 📝 Come usare l'applicazione
 
 1. Apri l'applicazione nel browser all'indirizzo [http://localhost:3000](http://localhost:3000)
 2. Inserisci la descrizione del tuo sogno nell'area di testo
