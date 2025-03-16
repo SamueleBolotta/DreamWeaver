@@ -34,7 +34,7 @@ Prima di iniziare, assicurati di avere installato:
    npm install
    ```
 
-   > **Nota Importante:** La directory `node_modules` non è inclusa nel repository e verrà creata automaticamente quando esegui `npm install`.
+   > **Nota importante:** La directory `node_modules` non è inclusa nel repository e verrà creata automaticamente quando esegui `npm install`.
    
 3. **Configura le variabili d'ambiente**
 
