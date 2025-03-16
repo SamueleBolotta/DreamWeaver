@@ -42,7 +42,7 @@ Prima di iniziare, assicurati di avere installato:
 
    ```plaintext
    # Chiave API per OpenAI o altra API di AI che stai utilizzando
-   API_KEY=your_api_key_here
+   OPENAI_API_KEY=your_api_key_here
    ```
 
    Sostituisci `your_api_key_here` con la tua chiave API effettiva.
